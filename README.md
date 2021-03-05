@@ -4,6 +4,7 @@
 
 - Portfolio Project (Part 1)
 - Portfolio Project (Part 2)
+- Portfolio Project (Part 2)
 
 ##JS
 
