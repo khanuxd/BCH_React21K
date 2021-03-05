@@ -1,0 +1,112 @@
+/* Global Style */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(236, 250, 255);
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 32px 0;
+}
+
+p {
+  margin: 16px 0;
+  line-height: 1.5;
+}
+
+/* Header Area */
+
+header {
+  min-height: 500px;
+  text-align: center;
+  background: url("https://source.unsplash.com/400x200/?desk") no-repeat fixed
+    center center/cover;
+}
+
+header h2 {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  padding: 15px 0;
+}
+
+header nav {
+  padding: 15px 0;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 16px;
+}
+
+header a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#hero-banner h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  padding-top: 150px;
+}
+
+/* Main Area */
+
+#past,
+#present,
+#future,
+#more {
+  padding: 20px;
+  min-height: 280px;
+}
+
+#present,
+#more {
+  background-color: rgb(255, 255, 255);
+}
+
+#past img,
+#future img {
+  float: left;
+  margin-right: 32px;
+}
+
+#present img,
+#more img {
+  float: right;
+  margin-left: 32px;
+}
+
+img {
+  height: 200px;
+}
+
+/* Footer Area */
+
+footer {
+  text-align: center;
+  padding: 2px 0;
+  background-color: rgb(244, 244, 244);
+}
