@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Speed Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Speed Game</h1>
+      <section class="game_Board">
+        <div>
+          <div class="gameArea">
+            <h2 id="gameLevel"></h2>
+            <h2 id="score"></h2>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          <button type="button" id="start">Start Game</button>
+        </div>
+      </section>
+
+      <section id="result">
+        <div class="gameOverBox">
+          <p id="gameOverMessage">Ups, game over!</p>
+          <p id="gameOver"></p>
+          <button type="button" id="close">Close</button>
+        </div>
+      </section>
+    </main>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
