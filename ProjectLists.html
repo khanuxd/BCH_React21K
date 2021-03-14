@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio project for Business College Helsinki HTML and CSS3 course"
+    />
+    <meta name="author" content="Khan Fayjul" />
+    <meta name="keywords" content="HTML5, CSS3, JS, school-project" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Global Style */
+
+      :root {
+        --primary-color: rgb(66, 82, 255);
+        --primary-color-light: rgb(88, 102, 255);
+        --primary-color-dark: rgb(38, 44, 110);
+
+        --text-color: rgb(42, 42, 42);
+        --separator-line: rgb(213, 213, 213);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .container {
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 80px 0;
+      }
+
+      h1 {
+        margin: 32px 0;
+        font-size: 2.2rem;
+      }
+
+      h3 {
+        margin: 1rem 0;
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+
+      p {
+        margin: 1rem 0;
+        line-height: 1.5;
+      }
+
+      a {
+        text-decoration: none;
+        color: rgb(78, 92, 255);
+      }
+
+      .bg {
+        background-color: var(--primary-color);
+        box-shadow: 0 0 15px rgba(51, 68, 255, 0.479);
+      }
+
+      /* Header Area */
+
+      header .navbar-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 5rem;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 4;
+      }
+
+      header h2 {
+        font-weight: 400;
+        text-transform: uppercase;
+        color: white;
+        padding: 15px 0;
+      }
+
+      header nav {
+        padding: 15px 0;
+      }
+
+      #Burger-menu {
+        display: none;
+      }
+
+      header nav ul {
+        list-style-type: none;
+      }
+
+      header nav ul li {
+        display: inline-block;
+        padding: 0 1rem;
+      }
+
+      header a {
+        text-decoration: none;
+        color: #ffffff;
+      }
+
+      #hero-banner {
+        height: 70vh;
+        background: url("https://source.unsplash.com/400x200/?creative")
+          no-repeat fixed center center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      #hero-banner::after {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+
+      #hero-banner h1 {
+        font-size: 4rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+        z-index: 3;
+        padding: 0 50px;
+        line-height: 1.5;
+      }
+
+      #hero-banner h1 span {
+        display: block;
+        font-size: 2rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+        z-index: 2;
+        padding: 0 50px;
+        line-height: 1.5;
+      }
+
+      /* Section */
+
+      .section_separator {
+        width: 100%;
+        height: 1px;
+        background-color: var(--separator-line);
+        margin: 20px auto;
+      }
+
+      #html_css ul {
+        list-style-type: square;
+      }
+
+      #html_css ul li {
+        color: var(--primary-color);
+      }
+
+      #html_css ul li a {
+        font-size: 1.2rem;
+        line-height: 3rem;
+        text-decoration: none;
+        color: var(--text-color);
+      }
+
+      .list_items {
+        margin-left: 50px;
+      }
+
+      /* Footer Area */
+
+      footer {
+        font-size: 0.8rem;
+        color: rgb(207, 207, 207);
+        text-align: center;
+        padding: 1rem 0;
+        background-color: rgb(42, 42, 42);
+      }
+
+      #backToTop {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+      }
+
+      footer button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--primary-color-dark);
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        border-style: none;
+        border-radius: 5px;
+        padding: 1rem;
+        box-shadow: 0 0 10px rgb(49, 54, 119, 0.5);
+        cursor: pointer;
+      }
+
+      .material-icons {
+        font-size: 2rem;
+        margin-bottom: 5px;
+      }
+
+      /* Tablet Support */
+
+      @media (max-width: 899px) {
+        #Burger-menu {
+          display: block;
+          background-color: transparent;
+          color: white;
+          border: none;
+        }
+        #Burger-menu .material-icons {
+          font-size: 2rem;
+        }
+
+        nav ul {
+          display: none;
+        }
+
+        nav.responsive ul {
+          display: block;
+          background-color: var(--primary-color-light);
+          position: absolute;
+          width: 100%;
+          left: 0;
+          top: 113px;
+          padding: 50px;
+          text-align: center;
+        }
+
+        nav.responsive ul li {
+          display: block;
+          text-transform: uppercase;
+          font-size: 1.2rem;
+        }
+
+        nav.responsive ul li a {
+          display: block;
+          padding: 1rem 2rem;
+        }
+
+        .grid-div p {
+          font-size: 0.9rem;
+        }
+
+        form {
+          width: 100%;
+          text-align: left;
+        }
+
+        form label {
+          display: block;
+          margin-bottom: 0.5rem;
+        }
+
+        form input,
+        form textarea,
+        form button {
+          width: 100%;
+          margin: 0;
+        }
+
+        #backToTop {
+          bottom: 1rem;
+          right: 1rem;
+          font-size: inherit;
+        }
+
+        footer button {
+          border-radius: 5px;
+          padding: 0.5rem;
+          z-index: 4;
+        }
+
+        .material-icons {
+          font-size: 1rem;
+          margin-bottom: 3px;
+        }
+      }
+
+      /* Mobile Support */
+
+      @media (max-width: 576px) {
+        .container {
+          max-width: 80%;
+          margin: 0 auto;
+          padding: 30px;
+        }
+
+        header .navbar-main {
+          padding: 1.5rem 3rem;
+        }
+
+        nav.responsive ul {
+          display: block;
+          background-color: var(--primary-color-light);
+          position: absolute;
+          width: 100%;
+          left: 0;
+          top: 97px;
+          padding: 50px;
+        }
+
+        header nav ul {
+          margin-top: 1rem;
+        }
+
+        header nav ul li {
+          padding: 0.5rem;
+          text-transform: uppercase;
+        }
+
+        #hero-banner h1 {
+          font-size: 2.5rem;
+          text-align: center;
+          line-height: 1.5;
+        }
+
+        #gallery p {
+          text-align: center;
+        }
+
+        .gallery-group {
+          display: block;
+          width: 100%;
+        }
+
+        .grid-div {
+          margin: 1.5rem 0;
+        }
+
+        .grid-div p {
+          font-size: 1rem;
+        }
+
+        #backToTop {
+          bottom: 1rem;
+          right: 1rem;
+          font-size: inherit;
+        }
+
+        footer button {
+          border-radius: 5px;
+          padding: 0.5rem;
+        }
+
+        .material-icons {
+          font-size: 1rem;
+          margin-bottom: 3px;
+        }
+      }
+    </style>
+
+    <title>Portfoilio Project (Part 6)</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar-main">
+        <div class="logo">
+          <h2><a href="index.html">Khan</a></h2>
+        </div>
+        <nav>
+          <button id="Burger-menu">
+            <span class="material-icons"> menu </span>
+          </button>
+          <ul>
+            <li><a href="#html_css">HTML5 & CSS3</a></li>
+            <li><a href="#javascript">JavaScript</a></li>
+            <li><a href="#ui_ux">UI/UX</a></li>
+            <li><a href="#agile">Agile</a></li>
+          </ul>
+        </nav>
+      </div>
+      <section id="hero-banner">
+        <h1>
+          Business College Helsinki
+          <span> FullStack Progam (School Projects Period 1) </span>
+        </h1>
+      </section>
+    </header>
+    <main>
+      <section id="html_css">
+        <div class="container">
+          <h2>HTML5 & CSS3</h2>
+          <div class="section_separator"></div>
+          <div class="list_items">
+            <ul>
+              <li><a href="#">Portfoilio Project (Part 1)</a></li>
+              <li><a href="#">Portfoilio Project (Part 2)</a></li>
+              <li><a href="#">Portfoilio Project (Part 3)</a></li>
+              <li><a href="#">Portfoilio Project (Part 4)</a></li>
+              <li><a href="#">Portfoilio Project (Part 5)</a></li>
+              <li><a href="#">Portfoilio Project (Part 6)</a></li>
+              <li><a href="#">Portfoilio Project (Part 7)</a></li>
+              <li><a href="#">Portfoilio Project (Part 8)</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="javascript">
+        <div class="container">
+          <h2>JavaScript</h2>
+          <div class="section_separator"></div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ut
+            impedit obcaecati aperiam perferendis praesentium eveniet, libero
+            expedita quidem quisquam consequuntur nihil quaerat voluptate
+            explicabo magni sapiente officiis repudiandae, alias dolorum, enim
+            numquam minus? A at et dolores omnis! Nihil illo quia ad laboriosam
+            debitis ex corporis quis! Vel, tenetur velit modi quos cupiditate
+            nisi quasi. Explicabo blanditiis nemo molestiae minus? Omnis,
+            consequatur, laboriosam quaerat aliquid iusto sint odit eligendi ea
+            corrupti aperiam veniam repudiandae! Ex, culpa eius? Dignissimos
+            provident ut blanditiis ipsum fugit inventore mollitia quo porro
+            quos? Modi ab quasi asperiores molestias vero, aliquid at est velit
+            voluptate?
+          </p>
+        </div>
+      </section>
+
+      <section id="ui_ux">
+        <div class="container">
+          <h2>UI / UX Design</h2>
+          <div class="section_separator"></div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ut
+            impedit obcaecati aperiam perferendis praesentium eveniet, libero
+            expedita quidem quisquam consequuntur nihil quaerat voluptate
+            explicabo magni sapiente officiis repudiandae, alias dolorum, enim
+            numquam minus? A at et dolores omnis! Nihil illo quia ad laboriosam
+            debitis ex corporis quis! Vel, tenetur velit modi quos cupiditate
+            nisi quasi. Explicabo blanditiis nemo molestiae minus? Omnis,
+            consequatur, laboriosam quaerat aliquid iusto sint odit eligendi ea
+            corrupti aperiam veniam repudiandae! Ex, culpa eius? Dignissimos
+            provident ut blanditiis ipsum fugit inventore mollitia quo porro
+            quos? Modi ab quasi asperiores molestias vero, aliquid at est velit
+            voluptate?
+          </p>
+        </div>
+      </section>
+
+      <section id="agile">
+        <div class="container">
+          <h2>Agile Software Development</h2>
+          <div class="section_separator"></div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ut
+            impedit obcaecati aperiam perferendis praesentium eveniet, libero
+            expedita quidem quisquam consequuntur nihil quaerat voluptate
+            explicabo magni sapiente officiis repudiandae, alias dolorum, enim
+            numquam minus? A at et dolores omnis! Nihil illo quia ad laboriosam
+            debitis ex corporis quis! Vel, tenetur velit modi quos cupiditate
+            nisi quasi. Explicabo blanditiis nemo molestiae minus? Omnis,
+            consequatur, laboriosam quaerat aliquid iusto sint odit eligendi ea
+            corrupti aperiam veniam repudiandae! Ex, culpa eius? Dignissimos
+            provident ut blanditiis ipsum fugit inventore mollitia quo porro
+            quos? Modi ab quasi asperiores molestias vero, aliquid at est velit
+            voluptate?
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright &copy; Khan 2021</p>
+      <button id="backToTop">
+        <span class="material-icons"> arrow_upward</span>Top
+      </button>
+    </footer>
+    <script>
+      let header = document.querySelector(".navbar-main");
+      let buttonBackToTop = document.getElementById("backToTop");
+      let buttonMobile = document.getElementById("Burger-menu");
+      let nav = document.querySelector("nav");
+      let links = document.querySelectorAll("nav ul li a");
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      const scrollFunction = () => {
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          header.classList.add("bg");
+          buttonBackToTop.style.visibility = "visible";
+          // buttonBackToTop.style.display = 'block';
+        } else {
+          header.classList.remove("bg");
+          buttonBackToTop.style.visibility = "hidden";
+          // buttonBackToTop.style.display = 'none';
+        }
+      };
+
+      const goToTop = () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      };
+
+      const mobMenu = () => {
+        for (let i = 0; i < links.length; i++) {
+          links[i].addEventListener("click", mobMenu);
+        }
+        if (nav.classList.contains("responsive")) {
+          nav.classList.remove("responsive");
+          document.body.style.overflow = "";
+        } else {
+          nav.classList.add("responsive");
+          document.body.style.overflow = "hidden";
+        }
+      };
+
+      buttonBackToTop.addEventListener("click", goToTop);
+      buttonMobile.addEventListener("click", mobMenu);
+    </script>
+  </body>
+</html>
