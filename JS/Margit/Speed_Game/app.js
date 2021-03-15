@@ -25,17 +25,34 @@ const getRand = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+let counter = 0;
+
+
 // Start Button action
 
 startButton.addEventListener('click', function () {
-    startButton.disabled = true;
+    // startButton.disabled = true;
     startGame();
+    counter++;
+    if (counter > 0) {
+        startButton.textContent = 'End Game';
+        if (missedActionCount > 3) {
+            // console.log('Counter Missed');
+            endGame();
+        }
+    }
+
+    if (counter > 1) {
+        endGame();
+    }
 })
 
 // Function for the game start
 
 const startGame = () => {
     gameSound.play();
+
+    missedActionCount++;
 
     buttons[0].onclick = function () {
         clicked(0);
@@ -67,18 +84,17 @@ const startGame = () => {
 
         startGame();
 
-        missedActionCount++;
-        
         if (missedActionCount > 0) {
+            // gameSound.stop();
             gameSound.pause();
         }
 
-        if (missedActionCount === 3) {
-            console.log('Counter Missed');
+        if (missedActionCount > 3) {
+            // console.log('Counter Missed');
             endGame();
         }
 
-        console.log(`Missed counter ${missedActionCount}`);
+        // console.log(`Missed counter ${missedActionCount}`);
 
     }, timeDelay);
 

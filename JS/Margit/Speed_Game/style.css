@@ -14,7 +14,6 @@ body {
   width: 100vw;
   height: 100vh;
   text-align: center;
-  /* color: #fff; */
   background-color: #e5e9ff;
 }
 
@@ -109,8 +108,8 @@ h1 {
 .gameOverBox {
   background-color: white;
   padding: 100px;
-  width: 30%;
-  height: 30%;
+  min-width: 500px;
+  min-height: 250px;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
