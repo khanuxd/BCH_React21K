@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio project for Business College Helsinki HTML and CSS3 course"
+    />
+    <meta name="author" content="Khan Fayjul" />
+    <meta name="keywords" content="HTML5, CSS3, Portfolio, school-project" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfoilio Project (Part 7)</title>
+</head>
+<body>
+    <header>
+        <div class="navbar-main">
+            <div class="logo">
+                <h2><a href="./index.html">Khan</a></h2>
+            </div>
+            <nav>
+                <button id="Burger-menu">
+                    <span class="material-icons"> menu </span>
+                </button>
+                <ul>
+                    <li><a href="./index.html#projects">Projects</a></li>
+                    <li><a href="./index.html#experience">Experience</a></li>
+                    <li><a href="./index.html#skills">Skill</a></li>
+                    <li><a href="./gallery.html#gallery">gallery</a></li>
+                    <li><a href="./index.html#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    <section id="hero-banner">
+        <h1>Welcome To <span> Khan's Portfolio</span></h1>
+    </section>
+    </header>
+    <main>
+        <section id="projects">
+            <div class="container">
+                <h1>Projects</h1>
+                <div class="projects-card">
+                    <div class="card">
+                        <img src="https://source.unsplash.com/400x200/?computer" alt="Projects Image">
+                        <div class="card-text">
+                            <h3>Card Text One</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur totam nostrum doloremque ipsum voluptatum ut, vitae quo recusandae quidem at.</p>
+                            <a href="#">See More</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://source.unsplash.com/400x200/?studio" alt="Projects Image">
+                        <div class="card-text">
+                            <h3>Card Text Two</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur totam nostrum doloremque ipsum voluptatum ut, vitae quo recusandae quidem at.</p>
+                            <a href="#">See More</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://source.unsplash.com/400x200/?gadget" alt="Projects Image">
+                        <div class="card-text">
+                            <h3>Card Text Three</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur totam nostrum doloremque ipsum voluptatum ut, vitae quo recusandae quidem at.</p>
+                            <a href="#">See More</a>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </section>
+        <section id="experience">
+            <div class="container">
+                <h1>Experience</h1>
+                <img src="https://source.unsplash.com/400x200/?laptop" alt="experience Image">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente itaque rerum esse aperiam incidunt, laborum minima aliquam eum distinctio in facere, ad sint voluptatibus autem veritatis at consequatur dolores consequuntur? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente itaque rerum esse aperiam incidunt, laborum minima aliquam eum distinctio in facere, ad sint voluptatibus autem veritatis at consequatur dolores consequuntur?</p>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="container">
+                <h1>Skills</h1>
+                <div class="skill-items">
+                    <div class="skill">
+                        <i class="icon-vector"></i>
+                        <p>UI / UX Design</p>
+                        <progress value="90" max="100">90%</progress>
+                      </div>
+                      <div class="skill">
+                        <i class="icon-file-code"></i>
+                        <p>Programming</p>
+                        <progress value="75" max="100">75%</progress>
+                      </div>
+                      <div class="skill">
+                        <i class="icon-github-circled"></i>
+                        <p>Git</p>
+                        <progress value="85" max="100">85%</progress>
+                      </div>
+                      <div class="skill">
+                        <i class="icon-medium"></i>
+                        <p>Writing</p>
+                        <progress value="70" max="100">70%</progress>
+                      </div>
+                      <div class="skill">
+                        <i class="icon-bullseye"></i>
+                        <p>Marketing & Promotion</p>
+                        <progress value="75" max="100">75%</progress>
+                      </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h1>Contact Me</h1>
+                <form>
+                    <div class="form-content">
+                        <label for="name">Your Name</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="form-content">
+                        <label for="email">Your Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="form-content">
+                        <label for="message">Your Message</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    <button id="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; Khan 2021</p>
+        <button id="backToTop"><span class="material-icons"> arrow_upward</span>Top
+          </button>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
