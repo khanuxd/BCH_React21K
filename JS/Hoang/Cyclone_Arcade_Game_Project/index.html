@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyclone Arcade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="bulbs"></div>
+        <div class="user-control">
+        <div class="rangeInput">
+            <label for="speed"><strong>Step 1 :</strong> <br> <strong>Select</strong> the Blinking Speed</label>
+            <span id="rangeValue"></span>
+            <input type="range" id="speed" name="speed" min="50" max="500">
+        </div>
+        <div class="btn">
+        <button id="start-btn">Start</button>
+        <button id="stop-btn">Stop!</button>
+        </div>
+        <p><strong>Step 2:</strong> <br> click <strong>'START'</strong> to play &<br> <strong>'STOP'</strong> at RED to win!</p>
+    </div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
