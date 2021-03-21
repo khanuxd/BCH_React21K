@@ -1,4 +1,4 @@
-# REACT21K (Perio One)
+# REACT21K (Period One)
 
 This repo is prepared for the preparation of the school projects during the preiod One. Basically, based on the given exercises, my duty is to solve those problem and push it into GitHub repo and finally to share the link into the school system. After that, my teacher used to check my problem solving technique, and how I am managing everything.
 
