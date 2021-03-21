@@ -31,7 +31,6 @@ let counter = 0;
 // Start Button action
 
 startButton.addEventListener('click', function () {
-    // startButton.disabled = true;
     startGame();
     counter++;
     if (counter > 0) {
@@ -85,7 +84,6 @@ const startGame = () => {
         startGame();
 
         if (missedActionCount > 0) {
-            // gameSound.stop();
             gameSound.pause();
         }
 
@@ -113,8 +111,6 @@ const startGame = () => {
 
     const clicked = (i) => {
 
-        // missedActionCount = 0;
-
         if (i == active) {
 
             levelTwo = myLevel;
@@ -137,7 +133,7 @@ const startGame = () => {
         }
         else {
             endGame();
-            // console.log('choose right one');
+            // console.log('did not choose the right one');
         }
         // console.log('my click:', i);
 
