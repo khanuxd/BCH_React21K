@@ -37,9 +37,7 @@ function performCalculation() {
         operationresult = Number(firstNumber) / Number(secondNumber);
     }
 
-    //toFixed(4) will limit the output into 4 digit after decimal
-
-    displayOutput.innerText = operationresult.toFixed(4);
+    displayOutput.innerText = operationresult;
 
     firstNumber = '' + operationresult;
     secondNumber = '';
