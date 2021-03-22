@@ -28,13 +28,13 @@ There are multiple projects for the course JavaScript. The list of all projects 
 
 - Weather Forercast App Project [Live Preview](https://khanuxd.github.io/BCH_React21K/JS/Hoang/Weather_App)
 
-- Random Users Profile Generation [Live Preview](https://khanuxd.github.io/BCH_React21K/JS/Hoang/Weather_App)
+- Random Users Profile Generation [Live Preview](https://khanuxd.github.io/BCH_React21K/JS/Hoang/Random_Users/)
 
-- Cyclone Arcade Game Project [Live Preview](https://khanuxd.github.io/BCH_React21K/JS/Hoang/Weather_App)
+- Cyclone Arcade Game Project [Live Preview](https://khanuxd.github.io/BCH_React21K/JS/Hoang/Cyclone_Arcade_Game_Project)
 
 ## Authors and acknowledgment
 
 Khan Fayjul
-Business College helsinki, Finland
+Business College Helsinki, Finland
 
 - GitHub @KhanUXD

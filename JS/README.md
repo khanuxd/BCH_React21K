@@ -31,6 +31,6 @@ There are multiple projects for the course JavaScript. The list of all projects 
 ## Authors and acknowledgment
 
 Khan Fayjul
-Business College helsinki, Finland
+Business College Helsinki, Finland
 
 - GitHub @KhanUXD
