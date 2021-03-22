@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.random-user-area {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  padding: 20px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.userInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.userInput label {
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.userInput input {
+  margin: 20px 0;
+  width: 350px;
+  padding: 10px;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid rgb(87, 87, 87);
+  background-color: rgb(241, 241, 241);
+}
+
+.userInput button {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+#user-lists {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+.user {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+  margin: 20px;
+  cursor: pointer;
+}
+
+.user:hover {
+  box-shadow: 0 1px 15px rgb(155, 155, 155);
+}
+
+.user-card-img img {
+  width: 100%;
+  height: 300px;
+}
+
+.user-card-footer {
+  padding: 20px;
+  line-height: 1.5rem;
+  font-weight: 300;
+  color: rgb(80, 80, 80);
+}
+
+.user-card-footer h2 {
+  text-transform: capitalize;
+  color: rgb(49, 49, 49);
+  padding-bottom: 20px;
+}
