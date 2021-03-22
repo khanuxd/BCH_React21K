@@ -1,18 +1,40 @@
-#Project Lists
+# REACT21K (Period One)
 
-#Project Preview: http://bit.ly/BCH_React21K
+This repo is prepared for the preparation of the school projects during the preiod One. Basically, based on the given exercises, my duty is to solve those problem and push it into GitHub repo and finally to share the link into the school system. After that, my teacher used to check my problem solving technique, and how I am managing everything.
 
-##HTML5_CSS3
+## Technologies used
 
-- Portfolio Project (Part 1)
-- Portfolio Project (Part 2)
-- Portfolio Project (Part 3)
-- Portfolio Project (Part 4)
-- Portfolio Project (Part 5)
-- Portfolio Project (Part 6)
-- Portfolio Project (Part 7)
-- Portfolio Project (Part 8)
+Built with:
 
-##JS
+- HTML5
+- JS (Vanilla)
+- CSS3
 
-- Coming Soon
+## HTML & CSS Portfolio Project
+
+Live version of the portfolio project for the course "HTML & CSS" can be reviewed [here](https://khanuxd.github.io/BCH_React21K/HTML5_CSS3/Portfolio_Part8/)
+
+## JS Project
+
+There are multiple projects for the course JavaScript. The list of all projects and task can be checked [here](https://github.com/khanuxd/BCH_React21K/tree/main/JS)
+
+- Speed Game Project [Live Preview](https://khanuxd.github.io/BCH_React21K/JS/Margit/Speed_Game/)
+
+- Count Down Timer Project [Live Preview](https://khanuxd.github.io/BCH_React21K/JS/JS/Margit/countDownTimer)
+
+- Calculator App Project [Live Preview](https://khanuxd.github.io/BCH_React21K/JS/Hoang/Calculator_App)
+
+- Pokedox Project [Live Preview](https://khanuxd.github.io/BCH_React21K/JS/Hoang/Pokemon_Project)
+
+- Weather Forercast App Project [Live Preview](https://khanuxd.github.io/BCH_React21K/JS/Hoang/Weather_App)
+
+- Random Users Profile Generation [Live Preview](https://khanuxd.github.io/BCH_React21K/JS/Hoang/Weather_App)
+
+- Cyclone Arcade Game Project [Live Preview](https://khanuxd.github.io/BCH_React21K/JS/Hoang/Weather_App)
+
+## Authors and acknowledgment
+
+Khan Fayjul
+Business College helsinki, Finland
+
+- GitHub @KhanUXD
