@@ -1,0 +1,102 @@
+<!-- Code from Margit -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>BG Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Background Generator</h1>
+      <form>
+        <h2>First, choose the direction:</h2>
+        <div class="direction">
+          <input type="radio" name="direction" id="lefttorigth" value="to right" checked/>
+          <label for="lefttorigth">Left to Right</label>
+        </div>
+        <div class="direction">
+          <input type="radio" name="direction" id="righttoleft" value="to left"/>
+          <label for="righttoleft">Right to Left</label>
+        </div>
+        <div class="direction">
+          <input type="radio" name="direction" id="toptobottom" value="to bottom"/>
+          <label for="toptobottom">Top to Bottom</label>
+        </div>
+        <div class="direction">
+          <input type="radio" name="direction" id="bottomtotop" value="to top"/>
+          <label for="bottomtotop">Bottom to Top</label>
+        </div>
+        <h2>Second, choose your colors:</h2>
+        <input type="color" id="color1" value="#e47a69" />
+        <input type="color" id="color2" value="#a0387f" />
+        <h2>Third, generate your gradient:</h2>
+        <input type="submit" value="Generate" />
+      </form>
+      <h2>Finally, copy your CSS code:</h2>
+      <p>background-Image:<br>linear-gradient(to right, #e47a69, #a0387f);</p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generate custom gradeint background is easy</h1>
+    
+        <form>
+            <h2>At first, choose the direction:</h2>
+        <div class="direction">
+                <input type="radio" name="direction" id="lefttoright">
+                <label for="lefttoright">Left to Right</label>
+        </div>
+        <div class="direction">
+            <input type="radio" name="direction" id="righttoleft">
+            <label for="righttoleft">Right to Left</label>
+        </div>
+        <div class="direction">
+            <input type="radio" name="direction" id="toptobottom">
+            <label for="toptobottom">Top to Bottom</label>
+        </div>
+        <div class="direction">
+            <input type="radio" name="direction" id="bottomtoright">
+            <label for="bottomtoright">Bottom to Right</label>
+        </div>
+        </form>
+        <div class="secondStep">
+            <h2>Second, choose colors:</h2>
+            <input type="color" name="firstColor" id="colorOne" value="#e47a69">
+            <input type="color" name="secondColor" id="colorTwo" value="#a0387f">
+        </div>
+        <div class="generate">
+            <h2>Third, generate your gradeint:</h2>
+            <button>Generate</button>
+        </div>
+        <div class="cssCode">
+            <h2>Finally, copy your CSS code:</h2>
+            <div class="gradientCode"></div>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html> -->
