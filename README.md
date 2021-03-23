@@ -32,7 +32,7 @@ There are multiple projects for the course JavaScript. The list of all projects 
 
 - Cyclone Arcade Game Project [Live Preview](https://khanuxd.github.io/BCH_React21K/JS/Hoang/Cyclone_Arcade_Game_Project)
 
-- Background Gradient Color Generator [Live Preview](https://khanuxd.github.io/BCH_React21K/JS/Margit/gradiant_Color_Generator/)
+- Background Gradient Color Generator [Live Preview](https://khanuxd.github.io/BCH_React21K/JS/Margit/BG_gradiant_Color_Generator)
 
 ## Authors and acknowledgment
 
