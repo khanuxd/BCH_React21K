@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -17,23 +21,23 @@
       <header>
         <h1>Check your Local Weather</h1>
       </header>
-        <div class="form-data-list">
-          <form class="form_data">
-            <label for="searchInput">Search By The City Name</label>
-            <input
-              type="text"
-              name="searchInput"
-              id="searchInput"
-              placeholder="Example: Helsinki"
-              autofocus
-              required
-            />
-          </form>
-        </div>
-        <div class="dataUpate">
-          <div class="alertNotification"></div>
-          <div class="dataResult"></div>
-        </div>
+      <div class="form-data-list">
+        <form class="form_data">
+          <label for="searchInput">Search By The City Name</label>
+          <input
+            type="text"
+            name="searchInput"
+            id="searchInput"
+            placeholder="Example: Helsinki"
+            autofocus
+            required
+          />
+        </form>
+      </div>
+      <div class="dataUpate">
+        <div class="alertNotification"></div>
+        <div class="dataResult"></div>
+      </div>
     </div>
     <script src="app.js"></script>
   </body>
