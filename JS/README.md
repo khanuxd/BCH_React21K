@@ -30,6 +30,8 @@ There are multiple projects for the course JavaScript. The list of all projects 
 
 - Background Gradient Color Generator [Live Preview](https://khanuxd.github.io/BCH_React21K/JS/Margit/BG_gradiant_Color_Generator)
 
+- Jackpot Application [Code](https://khanuxd.github.io/BCH_React21K/JS/Margit/BG_gradiant_Color_Generator)
+
 ## Authors and acknowledgment
 
 Khan Fayjul
